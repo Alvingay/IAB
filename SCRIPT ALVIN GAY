@@ -1,3 +1,16 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Alvin gay hub", "DarkTheme")
-local Tab = Window:NewTab("PRO CHEAT")
+local Window = Library.CreateLib("Alvin gay hub", "Sentinel")
+
+
+local Tab = Window:NewTab("Player System")
+local Section = Tab:NewSection("Walkspeed")
+local Section = Tab:NewSection("Jump Power")
+Section:NewSlider("Walkspeed", "More Speed", 500, 100, function(s) 
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+end)
+Section:NewSlider("Jump Power", "More Jump", 500, 16, function(s) 
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
+end)
+
+
+local Tab = Window:NewTab("Autofarm (soon)")
